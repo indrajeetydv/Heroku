@@ -1,0 +1,185 @@
+.resume{
+    background: #f1f2f6;
+}
+.resume .resume-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.resume .resume-content .right{
+   /* margin: 15px; */
+   flex:1 1 auto;
+   margin:0 35px;
+}
+section .resume-title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .resume-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 650px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.timeline {
+    margin-bottom: 30px;
+}
+ol, ul {
+    list-style: none;
+}
+ul {
+    /* display: block; */
+    /* list-style-type: disc; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+li {
+    /* display: list-item; */
+    margin: 10px;
+    /* text-align: -webkit-match-parent; */
+}
+.timeline li .timelineunit {
+    line-height: 17px;
+    margin-left: 0;
+    color: #444;
+    font-size: 13px;
+    border-left: 1px solid #0c5e7d;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.timeline li .timelineunit .timelinedate {
+    line-height: 17px;
+    color: #0c5e7d;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 400;
+    padding: 2px 6px;
+    /* float: right; */
+    position:absolute;
+    right: 1em;
+}
+.timeline li .timelineunit h4 {
+    line-height: 24px;
+    font-size: 15px;
+    color: #444;
+}
+.timeline li .timelineunit h5 {
+    line-height: 18px;
+    font-size: 13px;
+    color: #999;
+}
+
+.timeline li .timelineunit p {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+h3.main-heading {
+    margin: 0 2px 20px 0;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 14px;
+    color: #333;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+h3.main-heading::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: #0c5e7d;
+}
+
+.skills-section, .timeline-section {
+    float: left;
+}
+
+.skills {
+    margin-bottom: 25px;
+    /* overflow: hidden; */
+}
+
+.skills li {
+    margin-bottom: 15px;
+    float: left;
+    padding-left: 0;
+}
+
+.skills li h4 {
+    width: 140px;
+    float: left;
+    font-size: 15px;
+    color: #444;
+}
+.skills li .rating{
+    width:123px;
+    height:14px;
+    float: left;
+    position: relative;
+    top:1px;
+}
+
+.skills li .rating>span {
+    opacity: 0.3;
+    height:18px;
+    width: 18px;
+    background: #757575;
+    display: block;
+    float: left;
+    margin-right: 1px !important;
+    border: 2px solid #eee;
+    border-radius:20px;
+}
+
+@media(max-width: 947px){
+    .resume .resume-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    section .resume-title{
+        font-size:20px;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+
+    section .resume-title::before{
+        width:17em;
+    }
+    .resume .resume-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
