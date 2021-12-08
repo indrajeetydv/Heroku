@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
     }
     // scroll-up button show/hide script
     //window.pageYOffset > 500
-    if(window.pageYOffset > 50){
+    if(window.pageYOffset > 500){
       scrollUpBtnElement.classList.add("show");
     }else{
       scrollUpBtnElement.classList.remove("show");
