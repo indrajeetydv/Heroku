@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {faCopyright} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook} from '@fortawesome/free-brands-svg-icons';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   copyright=faCopyright;
   facebook=faFacebook;
   twitter=faTwitter;
-  github=faGithub;
+  github=faLinkedin;
   instagram=faInstagram;
   constructor() { }
 
